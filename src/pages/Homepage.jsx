@@ -1,0 +1,23 @@
+import React from 'react'
+import Herosection from '../components/Herosection'
+import About from '../components/About'
+import OurWork from '../components/OurWork'
+import OurBelief from '../components/OurBelief'
+import PartnerWithUs from '../components/PartnerWithUs'
+import Footer from '../components/Footer'
+import UpcomingEvent from '../components/UpcomingEvent'
+
+const Homepage = () => {
+  return (
+    <div>
+      <Herosection />
+      <About />
+      <OurWork />
+      {/* <OurBelief /> */}
+      {/* <PartnerWithUs /> */}
+      <UpcomingEvent />
+    </div>
+  )
+}
+
+export default Homepage
