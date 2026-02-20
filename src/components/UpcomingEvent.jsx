@@ -87,7 +87,7 @@ const UpcomingEvent = () => {
               whileInView={{ scale: 1 }}
               transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
               viewport={{ once: true }}
-              src="/images/arts-expo.png"
+              src="/images/ntiacplain.jpeg"
               alt="NTIAC Expo"
               className="w-full h-full object-cover"
             />

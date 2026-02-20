@@ -48,7 +48,7 @@ const Herosection = () => {
           >
             <p className="text-lg md:text-xl font-medium max-w-lg leading-relaxed opacity-90">
               <span className="text-purple-300 font-bold">Upcoming Event:</span>{" "}
-              Nigerian Tertiary Institutions Arts and Crafts Expo (NTIAC)
+              Nigeria Tertiary Institutions Arts and Crafts Expo (NTIAC)
             </p>
 
             <Link to={"/ntiac"}>
@@ -68,7 +68,7 @@ const Herosection = () => {
         >
           <div className="absolute inset-0 bg-orange-500 translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10 rounded-lg" />
           <img
-            src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=1920"
+            src="images/heroimg.jpg"
             alt="Vibrant Event Nigeria"
             className="w-full h-[300px] md:h-[450px] object-cover border-4 border-white rounded-lg shadow-lg"
           />

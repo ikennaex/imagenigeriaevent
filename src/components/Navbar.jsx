@@ -48,7 +48,7 @@ const Navbar = () => {
       className={`w-full fixed top-0 left-0 z-[100] transition-all duration-500 ${
         scrolled
           ? "bg-customGreen/80 backdrop-blur-xl py-3 border-b border-white/10"
-          : "bg-transparent py-6"
+          : "bg-customGreen py-6"
       }`}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12">
@@ -63,7 +63,7 @@ const Navbar = () => {
             <img
               src="images/logo.png"
               alt="Logo"
-              className="h-10 md:h-14 w-auto"
+              className="h-16 md:h-16 w-auto bg-white p-3 rounded-xl"
             />
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all group-hover:w-full" />
           </Link>

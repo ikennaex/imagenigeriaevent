@@ -12,7 +12,7 @@ const NTIAC = () => {
   };
 
   return (
-    <main className="bg-white w-full min-h-screen font-light text-black overflow-hidden">
+    <main className="bg-white w-full min-h-screen font-light text-black overflow-hidden mt-20">
       
       {/* HERO SECTION */}
       <section className="bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 w-full text-white py-32 relative">
@@ -35,7 +35,7 @@ const NTIAC = () => {
               variants={fadeInUp} 
               className="text-4xl md:text-6xl font-extralight tracking-tight leading-[1.1]"
             >
-              Nigerian Tertiary Institutions  
+              Nigeria Tertiary Institutions  
               <br />
               Arts and Crafts Expo  
               <span className="block font-normal mt-2 text-orange-200">
@@ -83,7 +83,7 @@ const NTIAC = () => {
             className="space-y-16"
           >
             <div className="space-y-4">
-              <h2 className="text-xs uppercase tracking-[0.4em] font-medium text-gray-400">
+              <h2 className="text-xl uppercase tracking-[0.4em] font-medium text-gray-600">
                 About the Event
               </h2>
               <div className="w-16 h-[2px] bg-orange-500"></div>

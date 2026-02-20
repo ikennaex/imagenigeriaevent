@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 const AboutPage = () => {
   const containerVariants = {
@@ -36,7 +37,7 @@ const AboutPage = () => {
               className="flex items-center gap-4 mb-8"
             >
               {/* <span className="w-12 h-[2px] bg-orange-500"></span> */}
-              <span className="text-orange-500 font-black tracking-[0.4em] text-xs uppercase">
+              <span className="text-orange-500 font-black tracking-[0.4em] text-xl uppercase">
                 About Us
               </span>
             </motion.div>
@@ -86,11 +87,13 @@ const AboutPage = () => {
       </section>
 
       {/* SECTION 2: THE LEADERSHIP (CEO Portrait) */}
-      <section className="min-h-screen bg-white py-32 overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div className="flex flex-col lg:flex-row">
+      {/* <p className="text-orange-500 font-black tracking-[0.4em] t ext-xl uppercase mb-10">Leadership</p> */}
+      <section className="min-h-screen bg-white py-32 p-3">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* CEO Image: Cinematic & Large */}
           <motion.div
-            className="lg:col-span-6 order-2 lg:order-1"
+            className="lg:col-span-4 order-2 lg:order-1"
             initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
             whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
             transition={{ duration: 1.2, ease: "expo.out" }}
@@ -106,19 +109,63 @@ const AboutPage = () => {
           </motion.div>
 
           {/* CEO Text */}
-          <div className="lg:col-span-6 order-1 lg:order-2 text-black">
-            <h3 className="text-orange-500 font-black text-xs uppercase tracking-[0.5em] mb-6">
-              Leadership
-            </h3>
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-8">
+          <div className="lg:col-span-10 order-1 lg:order-2 text-black">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tighter leading-none mb-8">
               Benjamin Peters
             </h2>
             <p className="text-xl text-gray-600 font-medium leading-relaxed max-w-md italic border-l-4 border-orange-500 pl-6">
               MD/ CEO, IMAGE NIGERIA EVENT
             </p>
+
+            <Link to="/ceo">
+            <button className="mt-6 px-8 py-3 bg-orange-500 text-white font-black uppercase tracking-widest text-xs hover:bg-orange-600 transition-colors duration-300">
+              Read Full Bio
+            </button>
+            </Link>
           </div>
         </div>
       </section>
+
+      {/* SECTION 2.1: THE LEADERSHIP (Strategic partner Portrait) */}
+      <section className="min-h-screen bg-white py-32">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          {/* CEO Image: Cinematic & Large */}
+          <motion.div
+            className="lg:col-span-4 order-2 lg:order-1"
+            initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
+            whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
+            transition={{ duration: 1.2, ease: "expo.out" }}
+          >
+            <div className="relative group">
+              <img
+                src="/images/strategic.jpeg" // Replace with actual CEO image
+                className="w-full h-full object-bottom object-cover contrast-125"
+                alt="CEO Image Nigeria Event"
+              />
+              <div className="absolute inset-0 bg-orange-500/10 mix-blend-multiply" />
+            </div>
+          </motion.div>
+
+          {/* CEO Text */}
+          <div className="lg:col-span-10 order-1 lg:order-2 text-black">
+            <h2 className="text-3xl md:text-5xl font-black  tracking-tighter leading-none mb-8">
+              Adeola Balogun, Ph.D
+            </h2>
+            <p className="text-xl text-gray-600 font-medium leading-relaxed max-w-md italic border-l-4 border-orange-500 pl-6">
+              STRATEGIC CONSULTANT NTIAC PROJECT
+            </p>
+
+            <Link to="/partner">
+            <button className="mt-6 px-8 py-3 bg-orange-500 text-white font-black uppercase tracking-widest text-xs hover:bg-orange-600 transition-colors duration-300">
+              Read Full Bio
+            </button>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
+      </div>
 
       {/* SECTION 3: STRATEGIC COLLABORATION (Diplomacy Gallery) */}
       <section className="py-32 bg-black overflow-hidden">

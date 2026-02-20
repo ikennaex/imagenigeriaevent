@@ -9,6 +9,8 @@ import OurWorkPage from "./pages/OurWorkPage";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery";
 import NTIAC from "./pages/NTIAC";
+import Ceo from "./pages/Ceo";
+import Partner from "./pages/Partner";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/" element = {<Homepage />} />
         <Route path="/about" element = {<About />} />
         <Route path="/ourwork" element = {<OurWorkPage />} />
+        <Route path="/ceo" element = {<Ceo />} />
+        <Route path="/partner" element = {<Partner />} />
         <Route path="/gallery" element = {<Gallery />} />
         <Route path="/contact" element = {<Contact />} />
         <Route path="/ntiac" element = {<NTIAC />} />

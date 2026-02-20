@@ -13,7 +13,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="w-full py-20 bg-customGreen">
+    <section className="w-full py-20 bg-customGreen mt-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
 
         {/* Header */}
