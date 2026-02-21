@@ -50,7 +50,7 @@ const UpcomingEvent = () => {
             variants={itemVariants}
             className="text-3xl md:text-5xl font-extrabold leading-[0.95] mb-12"
           >
-            Nigerian Tertiary <br />
+            Nigeria Tertiary <br />
             <span className="text-yellow-200">Arts & Crafts</span> <br />
             Expo <span className="text-white/60">(NTIAC)</span>
           </motion.h2>
