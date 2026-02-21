@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import { Routes, Route } from "react-router";
@@ -11,9 +11,25 @@ import Gallery from "./pages/Gallery";
 import NTIAC from "./pages/NTIAC";
 import Ceo from "./pages/Ceo";
 import Partner from "./pages/Partner";
+import Loader from "./components/Loader";
 
 const App = () => {
+    const [loading, setLoading] = useState(true)
+
+  
+  useEffect(() => {
+    // Option 1: Hide loader after a fixed time
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // show loader for 2 seconds
+
+    return () => clearTimeout(timer);
+
+  }, []);
+
   return (
+        <>
+      {loading ? (<Loader />) : (
     <div>
       <ScrollToTop/>
       <Navbar />
@@ -30,6 +46,8 @@ const App = () => {
 
       <Footer />
     </div>
+      )}
+    </>
   );
 };
 
