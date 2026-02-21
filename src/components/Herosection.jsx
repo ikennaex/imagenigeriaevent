@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
+import { Mail } from "lucide-react";
 
 const Herosection = () => {
   return (
@@ -44,9 +45,9 @@ const Herosection = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="flex flex-col gap-6 border-l-4 border-orange-500 pl-6 mt-8"
+            className="flex flex-col gap-6  mt-8"
           >
-            <p className="text-lg md:text-xl font-medium max-w-lg leading-relaxed opacity-90">
+            {/* <p className="text-lg md:text-xl font-medium max-w-lg leading-relaxed opacity-90">
               <span className="text-purple-300 font-bold">Upcoming Event:</span>{" "}
               Nigeria Tertiary Institutions Arts and Crafts Expo (NTIAC)
             </p>
@@ -55,7 +56,22 @@ const Herosection = () => {
               <button className="w-fit bg-orange-500 text-white px-10 py-4 font-bold uppercase tracking-widest hover:bg-white hover:text-customGreen transition-all duration-300 transform hover:-translate-y-1 shadow-xl">
                 Register Now
               </button>
-            </Link>
+            </Link> */}
+
+            <p>
+              Celebrating Creativity, Elevating Nigeria – IMAGE NIGERIA EVENT
+              crafts unforgettable experiences and high-profile awards to
+              showcase Nigeria on the global stage.
+            </p>
+
+            {/* <img src="images/logo.jpeg" alt="" /> */}
+
+            <a href="mailto:info@imagenigeriaevent.com">
+              <button className="w-fit bg-orange-500 text-white px-10 py-4 font-bold uppercase tracking-widest hover:bg-white hover:text-customGreen transition-all duration-300 transform hover:-translate-y-1 shadow-xl">
+                <Mail className="inline mr-2" />
+                Reach Us
+              </button>
+            </a>
           </motion.div>
         </div>
 
@@ -66,7 +82,7 @@ const Herosection = () => {
           transition={{ duration: 1, ease: "backOut", delay: 0.3 }}
           className="lg:col-span-4 order-1 lg:order-2 relative group mt-8 lg:mt-0"
         >
-          <div className="absolute inset-0 bg-orange-500 translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10 rounded-lg" />
+          <div className="absolute translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10 rounded-lg" />
           <img
             src="images/heroimg.jpg"
             alt="Vibrant Event Nigeria"

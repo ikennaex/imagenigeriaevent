@@ -1,12 +1,23 @@
 import React, { useState } from "react";
 
 const images = [
-  { id: 1, src: "/images/ekofestival.jpeg", title: "Traditional Sculptures" },
-  { id: 2, src: "/images/nokart.jpeg", title: "Modern Canvas Art" },
-  { id: 3, src: "/images/nokart2.jpeg", title: "Cultural Dance Performance" },
-  { id: 4, src: "/images/sculpture.jpeg", title: "Handcrafted Beadwork" },
-  { id: 5, src: "/images/bigstatue.jpeg", title: "Student Fashion Showcase" },
-  { id: 6, src: "/images/gallery6.jpeg", title: "Creative Exhibition Booth" },
+  { id: 1, src: "/images/ekofestival.jpeg"},
+  { id: 2, src: "/images/ekofestival2.jpeg" },
+  { id: 3, src: "/images/nokart2.jpeg"},
+  { id: 4, src: "/images/sculpture.jpeg"},
+  { id: 5, src: "/images/bigstatue.jpeg"},
+  { id: 6, src: "/images/art2.jpeg"},
+  { id: 7, src: "/images/art1.jpeg"},
+  { id: 8, src: "/images/nokart.jpeg"},
+  { id: 9, src: "/images/art3.jpeg"},
+  { id: 10, src: "/images/art4.jpeg"},
+  { id: 11, src: "/images/art5.jpeg"},
+  { id: 12, src: "/images/expodisplay1.jpeg"},
+  { id: 13, src: "/images/expodisplay2.jpeg"},
+  { id: 14, src: "/images/expodisplay3.jpeg"},
+  { id: 15, src: "/images/expodisplay4.jpeg"},
+  { id: 16, src: "/images/art6.jpeg"},
+
 ];
 
 const Gallery = () => {
@@ -15,19 +26,20 @@ const Gallery = () => {
   return (
     <section className="w-full py-20 bg-customGreen mt-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-            Event <span className="text-orange-500">Gallery</span>
+            <span className="text-white font-black  text-xl uppercase flex items-center justify-center">
+              <span className="text-orange-500">GALLERY</span>
+            </span>
           </h2>
-          <p className="mt-4 text-white text-lg">
-            BEAUTIFUL  CULTURAL HERITAGE AND FESTIVALS ACROSS NIGERIA
-          </p>
+          {/* <p className="mt-4 text-white text-lg">
+            BEAUTIFUL CULTURAL HERITAGE AND FESTIVALS ACROSS NIGERIA
+          </p> */}
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           {images.map((item) => (
             <div
               key={item.id}
@@ -37,15 +49,13 @@ const Gallery = () => {
               <img
                 src={item.src}
                 alt={item.title}
-                className="w-full h-[350px] object-cover transform group-hover:scale-110 transition duration-700 ease-out"
+                className="w-full h-40 object-cover transform group-hover:scale-110 transition duration-700 ease-out"
               />
 
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500" />
 
               <div className="absolute bottom-6 left-6 translate-y-6 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500">
-                <h3 className="text-white text-xl font-bold">
-                  {item.title}
-                </h3>
+                <h3 className="text-white text-xl font-bold">{item.title}</h3>
               </div>
             </div>
           ))}

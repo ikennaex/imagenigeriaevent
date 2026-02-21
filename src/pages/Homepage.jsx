@@ -6,15 +6,15 @@ import OurBelief from '../components/OurBelief'
 import PartnerWithUs from '../components/PartnerWithUs'
 import Footer from '../components/Footer'
 import UpcomingEvent from '../components/UpcomingEvent'
+import Team from '../components/Team'
 
 const Homepage = () => {
   return (
     <div>
       <Herosection />
       <About />
+      <Team />
       <OurWork />
-      {/* <OurBelief /> */}
-      {/* <PartnerWithUs /> */}
       <UpcomingEvent />
     </div>
   )

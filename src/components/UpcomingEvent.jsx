@@ -41,7 +41,7 @@ const UpcomingEvent = () => {
             className="flex items-center gap-4 mb-10"
           >
             <span className="text-white/80 font-bold tracking-[0.4em] text-xs uppercase">
-              Spotlight Event
+              Upcoming Event
             </span>
           </motion.div>
 
@@ -50,7 +50,7 @@ const UpcomingEvent = () => {
             variants={itemVariants}
             className="text-3xl md:text-5xl font-extrabold leading-[0.95] mb-12"
           >
-            Nigeria Tertiary <br />
+            Nigeria Tertiary Institutions <br />
             <span className="text-yellow-200">Arts & Crafts</span> <br />
             Expo <span className="text-white/60">(NTIAC)</span>
           </motion.h2>

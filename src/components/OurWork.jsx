@@ -39,10 +39,10 @@ const OurWork = () => {
       title: "Strategic Collaboration",
       desc: "Partnership-driven events across leadership, tourism, culture and business.",
     },
-    {
-      title: "Global Reach",
-      desc: "Projecting Nigerian innovation and influence to the world stage.",
-    },
+    // {
+    //   title: "Global Reach",
+    //   desc: "Projecting Nigerian innovation and influence to the world stage.",
+    // },
   ];
 
   return (
@@ -65,7 +65,7 @@ const OurWork = () => {
             initial={{ scale: 1.3 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
-            src="/images/bigstatue.jpeg"
+            src="/images/art5.jpeg"
             alt="Tourism destination activation"
             className="w-full h-full object-cover"
           />
@@ -85,7 +85,7 @@ const OurWork = () => {
         </motion.div>
 
         {/* RIGHT: Energetic Content */}
-        <div className="w-full lg:w-7/12 px-6 py-28 md:px-16 lg:px-24 flex flex-col justify-center">
+        <div className="w-full lg:w-7/12 px-6 py-10 md:px-16 lg:px-24 flex flex-col justify-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -93,17 +93,19 @@ const OurWork = () => {
             variants={staggerContainer}
           >
             {/* Label */}
-            <motion.div variants={fadeInUp} className="flex items-center gap-5 mb-16">
+            <motion.div variants={fadeInUp} className="flex items-center gap-5 pb-4">
               {/* <span className="h-[3px] w-16 bg-orange-500"></span> */}
-              <p className="text-[11px] uppercase tracking-[0.5em] font-bold text-orange-600">
-                Our Work
+              <p className="text-[11px] font-bold text-orange-600">
+                        <span className="text-black font-black  text-xl uppercase flex flex-col">
+          WHAT WE DO
+        </span>
               </p>
             </motion.div>
 
             {/* Headline */}
             <motion.h2
               variants={fadeInUp}
-              className="text-3xl md:text-5xl font-extrabold leading-tight mb-16 max-w-3xl"
+              className="text-3xl md:text-3xl leading-tight mb-16 max-w-3xl"
             >
               We Create <span className="text-orange-500">Experiences</span> That 
               Move People and Elevate Nations.
@@ -131,7 +133,7 @@ const OurWork = () => {
             </motion.div>
 
             {/* CTA */}
-            {location.pathname === "/" && (
+            {/* {location.pathname === "/" && (
               <motion.div variants={fadeInUp} className="pt-20">
                 <Link to="/ourwork" className="inline-block group relative">
                   <button className="relative overflow-hidden bg-black text-white px-16 py-6 rounded-full font-bold uppercase tracking-widest text-xs transition-all duration-500 hover:scale-105">
@@ -142,7 +144,7 @@ const OurWork = () => {
                   </button>
                 </Link>
               </motion.div>
-            )}
+            )} */}
           </motion.div>
         </div>
       </div>

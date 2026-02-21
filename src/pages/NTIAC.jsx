@@ -37,7 +37,7 @@ const NTIAC = () => {
             >
               Nigeria Tertiary Institutions  
               <br />
-              Arts and Crafts Expo  
+              Arts & Crafts Expo  
               <span className="block font-normal mt-2 text-orange-200">
                 (NTIAC 2026)
               </span>
@@ -72,7 +72,7 @@ const NTIAC = () => {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="py-32 bg-[#fafafa]">
+      <section className="py-16 bg-[#fafafa]">
         <div className="max-w-[1000px] mx-auto px-6">
 
           <motion.div 
@@ -83,15 +83,24 @@ const NTIAC = () => {
             className="space-y-16"
           >
             <div className="space-y-4">
-              <h2 className="text-xl uppercase tracking-[0.4em] font-medium text-gray-600">
-                About the Event
+              <div className="flex  items-center justify-center">
+              <img src="/images/ntiaclogo.png" alt="NTIAC Logo" className="w-28 lg:w-48 h-full lg:h-auto mx-auto pb-4" />
+              <img src="/images/ntiaclogo2.png" alt="NTIAC Logo" className="w-20 lg:w-48 h-full lg:h-auto mx-auto pb-4" />
+              </div>
+              <h2 className="text-xl uppercase font-medium text-gray-600">
+                About <span className="text-customGreen">THE NIGERIA TERTIARY INSTITUTIONS ARTS & CRAFTS EXPO</span> 
               </h2>
+
               <div className="w-16 h-[2px] bg-orange-500"></div>
+              <div className="flex">
+                <img src="/images/ntiacweb.jpeg" alt="NTIAC Web Image" className="w-1/2 h-full object-cover" />
+                <img src="/images/ntiacplain.jpeg" alt="NTIAC Web Image 2" className="w-1/2 h-full object-cover" />
+              </div>
             </div>
             
-            <div className="space-y-8 text-gray-700 leading-[1.9] text-base font-light border-l-2 border-orange-200 pl-10">
+            <div className="space-y-8 text-gray-700 leading-[1.9] text-base font-light ">
               <p>
-                THE NIGERIA TERTIARY INSTITUTIONS ARTS AND CRAFTS EXPO 2026 is a creative, innovative and strategic event concept proudly initiated by IMAGE NIGERIA EVENT.
+                THE NIGERIA TERTIARY INSTITUTIONS ARTS & CRAFTS EXPO 2026 is a creative, innovative and strategic event concept proudly initiated by IMAGE NIGERIA EVENT.
               </p>
               <p>
                 NTIAC is designed to celebrate, expose, showcase and project to Nigeria, Africa and the world the astonishing creative artistic and craftsmanship prowess of talented youths under one unified event platform.
