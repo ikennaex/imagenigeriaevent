@@ -120,7 +120,7 @@ const AboutPage = () => {
               Strategic <br />{" "}
               <span className="text-orange-500">Engagements</span>
             </h2>
-            <p className="text-white/40 mt-4 uppercase tracking-widest text-xs">
+            <p className="mt-4 uppercase tracking-widest text-xs">
               Photos from the strategic meeting between IMAGE Nigeria Event
               management and executives of the Lagos State Ministry of Tourism,
               Arts and Culture regarding NTIAC 2026.

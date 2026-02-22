@@ -53,7 +53,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services
           <div>
             <h4 className="text-xs uppercase tracking-[0.4em] font-bold text-orange-500 mb-8">
               Services
@@ -73,7 +73,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>

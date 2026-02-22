@@ -13,39 +13,41 @@ const NTIAC = () => {
 
   return (
     <main className="bg-white w-full min-h-screen font-light text-black overflow-hidden mt-20">
-      
       {/* HERO SECTION */}
       <section className="bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 w-full text-white py-32 relative">
         <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center min-h-[75vh]">
-          
-          <motion.div 
+          <motion.div
             className="lg:col-span-7 space-y-10"
             initial="hidden"
             animate="visible"
-            variants={{ visible: { transition: { staggerChildren: 0.12 }}}}
+            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
-            <motion.p 
-              variants={fadeInUp} 
+            <motion.p
+              variants={fadeInUp}
               className="text-xs uppercase tracking-[0.4em] font-medium opacity-80"
             >
               Upcoming Program
             </motion.p>
-            
-            <motion.h1 
-              variants={fadeInUp} 
+
+            <div className="w-1/2 bg-white p-2 rounded-lg mb-10">
+              <img src="images/ntiaclogo.png" alt="" />
+            </div>
+
+            <motion.h1
+              variants={fadeInUp}
               className="text-4xl md:text-6xl font-extralight tracking-tight leading-[1.1]"
             >
-              Nigeria Tertiary Institutions  
+              Nigeria Tertiary Institutions
               <br />
-              Arts & Crafts Expo  
+              Arts & Crafts Expo
               <span className="block font-normal mt-2 text-orange-200">
                 (NTIAC 2026)
               </span>
             </motion.h1>
 
             <motion.div variants={fadeInUp} className="pt-6">
-              <a 
-                href="#register" 
+              <a
+                href="#register"
                 className="inline-block bg-white text-orange-600 px-10 py-4 text-xs uppercase tracking-[0.25em] font-medium rounded-full hover:scale-105 hover:shadow-xl transition-all duration-500"
               >
                 Register Now
@@ -54,28 +56,26 @@ const NTIAC = () => {
           </motion.div>
 
           {/* Hero Image */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-5 h-[500px] lg:h-[700px] rounded-3xl overflow-hidden shadow-2xl relative"
             initial={{ opacity: 0, scale: 1.08 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.6 }}
           >
-            <img 
+            <img
               src="/images/ntiacbanner.jpeg"
-              alt="NTIAC Banner" 
+              alt="NTIAC Banner"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/10" />
           </motion.div>
-
         </div>
       </section>
 
       {/* ABOUT SECTION */}
       <section className="py-16 bg-[#fafafa]">
         <div className="max-w-[1000px] mx-auto px-6">
-
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -84,32 +84,62 @@ const NTIAC = () => {
           >
             <div className="space-y-4">
               <div className="flex  items-center justify-center">
-              <img src="/images/ntiaclogo.png" alt="NTIAC Logo" className="w-28 lg:w-48 h-full lg:h-auto mx-auto pb-4" />
-              <img src="/images/ntiaclogo2.png" alt="NTIAC Logo" className="w-20 lg:w-48 h-full lg:h-auto mx-auto pb-4" />
+                <img
+                  src="/images/ntiaclogo.png"
+                  alt="NTIAC Logo"
+                  className="w-28 lg:w-48 h-full lg:h-auto mx-auto pb-4"
+                />
+                <img
+                  src="/images/ntiaclogo2.png"
+                  alt="NTIAC Logo"
+                  className="w-20 lg:w-48 h-full lg:h-auto mx-auto pb-4"
+                />
               </div>
               <h2 className="text-xl uppercase font-medium text-gray-600">
-                About <span className="text-customGreen">THE NIGERIA TERTIARY INSTITUTIONS ARTS & CRAFTS EXPO</span> 
+                About{" "}
+                <span className="text-customGreen">
+                  THE NIGERIA TERTIARY INSTITUTIONS ARTS & CRAFTS EXPO
+                </span>
               </h2>
 
               <div className="w-16 h-[2px] bg-orange-500"></div>
               <div className="flex">
-                <img src="/images/ntiacweb.jpeg" alt="NTIAC Web Image" className="w-1/2 h-full object-cover" />
-                <img src="/images/ntiacplain.jpeg" alt="NTIAC Web Image 2" className="w-1/2 h-full object-cover" />
+                <img
+                  src="/images/ntiacweb.jpeg"
+                  alt="NTIAC Web Image"
+                  className="w-1/2 h-full object-cover"
+                />
+                <img
+                  src="/images/ntiacplain.jpeg"
+                  alt="NTIAC Web Image 2"
+                  className="w-1/2 h-full object-cover"
+                />
               </div>
             </div>
-            
+
             <div className="space-y-8 text-gray-700 leading-[1.9] text-base font-light ">
               <p>
-                THE NIGERIA TERTIARY INSTITUTIONS ARTS & CRAFTS EXPO 2026 is a creative, innovative and strategic event concept proudly initiated by IMAGE NIGERIA EVENT.
+                THE NIGERIA TERTIARY INSTITUTIONS ARTS & CRAFTS EXPO 2026 is a
+                creative, innovative and strategic event concept proudly
+                initiated by IMAGE NIGERIA EVENT.
               </p>
               <p>
-                NTIAC is designed to celebrate, expose, showcase and project to Nigeria, Africa and the world the astonishing creative artistic and craftsmanship prowess of talented youths under one unified event platform.
+                NTIAC is designed to celebrate, expose, showcase and project to
+                Nigeria, Africa and the world the astonishing creative artistic
+                and craftsmanship prowess of talented youths under one unified
+                event platform.
               </p>
               <p>
-                Across tertiary institutions in Nigeria offering Fine and Applied Arts and Crafts, there exists a powerful concentration of skill, talent and innovation. NTIAC provides global endorsement, recognition and acceptance for these outstanding works.
+                Across tertiary institutions in Nigeria offering Fine and
+                Applied Arts and Crafts, there exists a powerful concentration
+                of skill, talent and innovation. NTIAC provides global
+                endorsement, recognition and acceptance for these outstanding
+                works.
               </p>
             </div>
           </motion.div>
+
+          <img src="images/ntiacbanner2.jpeg" alt="" />
 
           {/* Images Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-24">
@@ -119,22 +149,20 @@ const NTIAC = () => {
               "/images/expodisplay3.jpeg",
               "/images/expodisplay4.jpeg",
             ].map((src, i) => (
-              <div 
+              <div
                 key={i}
                 className="aspect-square rounded-2xl overflow-hidden shadow-lg group"
               >
-                <img 
-                  src={src} 
-                  alt="Expo display" 
+                <img
+                  src={src}
+                  alt="Expo display"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
             ))}
           </div>
-
         </div>
       </section>
-
     </main>
   );
 };

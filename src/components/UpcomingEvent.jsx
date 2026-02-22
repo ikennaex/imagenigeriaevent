@@ -21,12 +21,12 @@ const UpcomingEvent = () => {
   };
 
   return (
-    <section className="pt-20 relative w-full py-28 md:py-36 overflow-hidden bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 text-white">
+    <section className="pt-12 relative w-full  overflow-hidden bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 text-white">
       {/* Soft Light Glows */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-white rounded-full blur-3xl opacity-10 animate-pulse" />
       <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-yellow-200 rounded-full blur-3xl opacity-10 animate-pulse" />
 
-      <div className="relative max-w-[1700px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+      <div className="relative max-w-[1700px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 lg:gap-20 gap-2 items-center">
         {/* LEFT SIDE */}
         <motion.div
           className="lg:col-span-6"
@@ -44,6 +44,10 @@ const UpcomingEvent = () => {
               Upcoming Event
             </span>
           </motion.div>
+
+          <div className="w-1/2 bg-white p-2 rounded-lg mb-10">
+            <img src="images/ntiaclogo.png" alt="" />
+          </div>
 
           {/* Title */}
           <motion.h2
@@ -81,6 +85,9 @@ const UpcomingEvent = () => {
 
         {/* RIGHT SIDE */}
         <div className="lg:col-span-6 relative">
+          <div>
+            <img src="images/ntiacbanner2.png" alt="" />
+          </div>
           <div className="relative overflow-hidden rounded-3xl aspect-[4/5] shadow-[0_40px_80px_rgba(0,0,0,0.25)]">
             <motion.img
               initial={{ scale: 1.15 }}
@@ -120,6 +127,7 @@ const UpcomingEvent = () => {
               Creative Energy
             </motion.div>
           </div>
+
         </div>
       </div>
     </section>
