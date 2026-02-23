@@ -72,14 +72,14 @@ const UpcomingEvent = () => {
 
           {/* CTA */}
           <motion.div variants={itemVariants}>
-            <button className="group relative overflow-hidden bg-white px-14 py-5 rounded-full transition-all duration-500 hover:scale-105">
               <Link to={"/ntiac"}>
+            <button className="group relative overflow-hidden bg-white px-14 py-5 rounded-full transition-all duration-500 hover:scale-105">
                 <span className="relative z-10 text-black font-bold uppercase tracking-widest text-xs transition-colors duration-500 group-hover:text-white">
-                  Register Now
+                  View Details
                 </span>
-              </Link>
               <div className="absolute inset-0 bg-black scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out" />
             </button>
+              </Link>
           </motion.div>
         </motion.div>
 

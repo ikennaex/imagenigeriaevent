@@ -12,6 +12,8 @@ import NTIAC from "./pages/NTIAC";
 import Ceo from "./pages/Ceo";
 import Partner from "./pages/Partner";
 import Loader from "./components/Loader";
+import SculptorPage from "./pages/SculptorPage";
+import ContentDev from "./pages/ContentDev";
 
 const App = () => {
     const [loading, setLoading] = useState(true)
@@ -39,6 +41,8 @@ const App = () => {
         <Route path="/ourwork" element = {<OurWorkPage />} />
         <Route path="/ceo" element = {<Ceo />} />
         <Route path="/partner" element = {<Partner />} />
+        <Route path="/sculptor" element = {<SculptorPage />} />
+        <Route path="/contentdev" element = {<ContentDev />} />
         <Route path="/gallery" element = {<Gallery />} />
         <Route path="/contact" element = {<Contact />} />
         <Route path="/ntiac" element = {<NTIAC />} />

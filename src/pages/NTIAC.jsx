@@ -47,7 +47,8 @@ const NTIAC = () => {
 
             <motion.div variants={fadeInUp} className="pt-6">
               <a
-                href="#register"
+              target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfXsyUahW8ogz38D_gz9uLniR6eAUKJFgLSWM1l9DVuLXPheQ/viewform?fbzx=9078314837635883477"
                 className="inline-block bg-white text-orange-600 px-10 py-4 text-xs uppercase tracking-[0.25em] font-medium rounded-full hover:scale-105 hover:shadow-xl transition-all duration-500"
               >
                 Register Now
