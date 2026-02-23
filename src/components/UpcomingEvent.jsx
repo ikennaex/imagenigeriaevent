@@ -21,7 +21,7 @@ const UpcomingEvent = () => {
   };
 
   return (
-    <section className="pt-12 relative w-full  overflow-hidden bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 text-white">
+    <section className="pt-12 pb-10 relative w-full  overflow-hidden bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 text-white">
       {/* Soft Light Glows */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-white rounded-full blur-3xl opacity-10 animate-pulse" />
       <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-yellow-200 rounded-full blur-3xl opacity-10 animate-pulse" />
