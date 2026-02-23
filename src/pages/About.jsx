@@ -21,7 +21,7 @@ const AboutPage = () => {
     },
   };
 
-    useEffect(() => {
+  useEffect(() => {
     if (location.hash === "#team") {
       const el = document.getElementById("team");
       if (el) {
@@ -35,20 +35,9 @@ const AboutPage = () => {
   return (
     <main className="bg-black w-full min-h-screen text-white pt-20">
       {/* SECTION 1: THE FOUNDATION (Storytelling) */}
-      <section className="min-h-screen flex items-center overflow-hidden py-24 border-b border-white/5">
+      <section className="bg-black w-full min-h-screen flex items-center overflow-hidden py-24">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          <motion.div variants={itemVariants} className="flex gap-5">
-            <img
-              src="/images/art1.jpeg"
-              alt="About Hero 1"
-              className="w-full h-64 object-cover rounded-lg mb-4"
-            />
-            <img
-              src="/images/art2.jpeg"
-              alt="About Hero 2"
-              className="w-full h-64 object-cover rounded-lg"
-            />
-          </motion.div>
+          {/* Left Side: Editorial Typography */}
           <motion.div
             className="lg:col-span-7"
             variants={containerVariants}
@@ -56,6 +45,19 @@ const AboutPage = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
+            <motion.div variants={itemVariants} className="flex gap-5">
+              <img
+                src="/images/art1.jpeg"
+                alt="About Hero 1"
+                className="w-full h-64 object-cover rounded-lg mb-4"
+              />
+              <img
+                src="/images/art2.jpeg"
+                alt="About Hero 2"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+            </motion.div>
+
             <motion.div
               variants={itemVariants}
               className="flex items-center gap-4 mb-8"
@@ -90,18 +92,40 @@ const AboutPage = () => {
             </motion.div>
           </motion.div>
 
+          {/* Right Side: Floating Masked Image */}
           <motion.div
             className="lg:col-span-5 relative"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.5 }}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, ease: "circOut" }}
+            viewport={{ once: true }}
           >
-            <div className="aspect-[4/5] bg-gray-900 overflow-hidden shadow-2xl">
-              <img
-                src="/images/ekofestival.jpeg"
-                className="w-full h-full object-cover grayscale opacity-60"
-                alt="Eko Festival"
-              />
+            {/* Decorative Elements */}
+            <div className="absolute -top-10 -right-10 w-32 h-32 border-t-2 border-r-2 border-orange-500 opacity-50 hidden md:block" />
+
+            <div className="relative z-10 overflow-hidden shadow-2xl flex gap-3">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.6 }}
+                className="aspect-[4/5] bg-gray-900"
+              >
+                <img
+                  src="/images/ekofestival.jpeg"
+                  alt="Tourism team and community"
+                  className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.6 }}
+                className="aspect-[4/5] bg-gray-900"
+              >
+                <img
+                  src="/images/ekofestival2.jpeg"
+                  alt="Tourism team and community"
+                  className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+                />
+              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -109,7 +133,7 @@ const AboutPage = () => {
 
       {/* SECTION 2: THE LEADERSHIP (CEO Portrait) */}
       <div id="team">
-      <Team />
+        <Team />
       </div>
 
       {/* SECTION 3: STRATEGIC COLLABORATION (Diplomacy Gallery) */}

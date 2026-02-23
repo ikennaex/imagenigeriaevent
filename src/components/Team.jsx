@@ -4,44 +4,55 @@ import { Link } from "react-router";
 
 const Team = () => {
   return (
-    <>
-      <div className="text-center py-12 text-3xl font-bold">
-        <span className="text-black font-black  text-xl uppercase flex flex-col">
-          THE TEAM
-        </span>
+    <div className="bg-white py-4">
+
+      {/* Section Title */}
+      <div className="text-center py-16">
+        <h2 className="text-3xl md:text-4xl font-black tracking-tight uppercase text-black">
+          The Team
+        </h2>
       </div>
-      <div className="flex flex-col lg:flex-row">
-        {/* <p className="text-orange-500 font-black tracking-[0.4em] text-xl uppercase mb-10">Leadership</p> */}
-        <section className="mb-3 bg-white  p-3">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* CEO Image: Cinematic & Large */}
+
+      {/* Wrapper */}
+      <div className="space-y-32">
+
+        {/* ===== MEMBER BLOCK ===== */}
+        <section>
+          <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 
+                          grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+            {/* Image */}
             <motion.div
-              className="lg:col-span-4 order-1 lg:order-1"
+              className="lg:col-span-5"
               initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
               whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
-              transition={{ duration: 0.2, ease: "expo.out" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
             >
-              <div className="relative group">
+              <div className="relative overflow-hidden">
                 <img
-                  src="/images/ceo.jpeg" // Replace with actual CEO image
-                  className="w-full h-full object-bottom object-cover contrast-125"
-                  alt="CEO Image Nigeria Event"
+                  src="/images/ceo.jpeg"
+                  className="w-full h-[500px] lg:h-[600px] object-cover object-bottom"
+                  alt="Benjamin Peters"
                 />
                 <div className="absolute inset-0 bg-orange-500/10 mix-blend-multiply" />
               </div>
             </motion.div>
 
-            {/* CEO Text */}
-            <div className="lg:col-span-10 order-1 lg:order-2 text-black">
-              <h2 className="text-2xl md:text-5xl font-black tracking-tighter leading-none mb-8">
+            {/* Text */}
+            <div className="lg:col-span-7 text-black">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6">
                 Benjamin Peters
               </h2>
-              <p className="text-xl text-gray-600 font-medium leading-relaxed max-w-md border-l-4 border-orange-500 pl-6">
-                MD/ CEO, IMAGE NIGERIA EVENT
+
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 
+                            font-medium border-l-4 border-orange-500 pl-6 max-w-xl">
+                MD / CEO, IMAGE NIGERIA EVENT
               </p>
 
               <Link to="/ceo">
-                <button className="mt-6 px-8 py-3 bg-orange-500 text-white font-black uppercase tracking-widest text-xs hover:bg-orange-600 transition-colors duration-300">
+                <button className="mt-8 px-10 py-4 bg-orange-500 text-white 
+                                   font-black uppercase tracking-widest text-xs 
+                                   hover:bg-orange-600 transition-colors duration-300">
                   Read Full Bio
                 </button>
               </Link>
@@ -49,37 +60,42 @@ const Team = () => {
           </div>
         </section>
 
-        {/* SECTION 2.1: THE LEADERSHIP (Strategic partner Portrait) */}
-        <section className="min-h-screen bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* CEO Image: Cinematic & Large */}
+
+        {/* ===== MEMBER BLOCK 2 ===== */}
+        <section>
+          <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 
+                          grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
             <motion.div
-              className="lg:col-span-4 order-2 lg:order-1"
+              className="lg:col-span-5 lg:order-2"
               initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
               whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
-              transition={{ duration: 0.2, ease: "expo.out" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
             >
-              <div className="relative group">
+              <div className="relative overflow-hidden">
                 <img
-                  src="/images/strategic.jpeg" // Replace with actual CEO image
-                  className="w-full h-full object-bottom object-cover contrast-125"
-                  alt="CEO Image Nigeria Event"
+                  src="/images/strategic.jpeg"
+                  className="w-full h-[500px] lg:h-[600px] object-cover object-bottom"
+                  alt="Adeola Balogun"
                 />
                 <div className="absolute inset-0 bg-orange-500/10 mix-blend-multiply" />
               </div>
             </motion.div>
 
-            {/* CEO Text */}
-            <div className="lg:col-span-10 order-2 lg:order-2 text-black">
-              <h2 className="text-2xl md:text-5xl font-black  tracking-tighter leading-none mb-8">
+            <div className="lg:col-span-7 lg:order-1 text-black">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-6">
                 Adeola Balogun, Ph.D
               </h2>
-              <p className="text-xl text-gray-600 font-medium leading-relaxed max-w-md  border-l-4 border-orange-500 pl-6">
-                STRATEGIC CONSULTANT NTIAC PROJECT
+
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 
+                            font-medium border-l-4 border-orange-500 pl-6 max-w-xl">
+                Strategic Consultant, NTIAC Project
               </p>
 
               <Link to="/partner">
-                <button className="mt-6 px-8 py-3 bg-orange-500 text-white font-black uppercase tracking-widest text-xs hover:bg-orange-600 transition-colors duration-300">
+                <button className="mt-8 px-10 py-4 bg-orange-500 text-white 
+                                   font-black uppercase tracking-widest text-xs 
+                                   hover:bg-orange-600 transition-colors duration-300">
                   Read Full Bio
                 </button>
               </Link>
@@ -87,37 +103,42 @@ const Team = () => {
           </div>
         </section>
 
-        {/* SECTION 2.1: THE LEADERSHIP (Strategic partner Portrait) */}
-        <section className="min-h-screen bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* content developer Image: Cinematic & Large */}
+
+        {/* ===== MEMBER BLOCK 3 ===== */}
+        <section>
+          <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 
+                          grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
             <motion.div
-              className="lg:col-span-4 order-2 lg:order-1"
+              className="lg:col-span-5"
               initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
               whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
-              transition={{ duration: 0.2, ease: "expo.out" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
             >
-              <div className="relative group">
+              <div className="relative overflow-hidden">
                 <img
-                  src="/images/content-developer.jpeg" // 
-                  className="w-full h-full object-bottom object-cover contrast-125"
-                  alt="CEO Image Nigeria Event"
+                  src="/images/content-developer.jpeg"
+                  className="w-full h-[500px] lg:h-[600px] object-cover object-bottom"
+                  alt="Babafunsho Adekunle"
                 />
                 <div className="absolute inset-0 bg-orange-500/10 mix-blend-multiply" />
               </div>
             </motion.div>
 
-            {/* CEO Text */}
-            <div className="lg:col-span-10 order-2 lg:order-2 text-black">
-              <h2 className="text-2xl md:text-5xl font-black  tracking-tighter leading-none mb-8">
+            <div className="lg:col-span-7 text-black">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-6">
                 Babafunsho Adekunle
               </h2>
-              <p className="text-xl text-gray-600 font-medium leading-relaxed max-w-md border-l-4 border-orange-500 pl-6">
+
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 
+                            font-medium border-l-4 border-orange-500 pl-6 max-w-xl">
                 Marketing / Media Content Developer
               </p>
 
               <Link to="/contentdev">
-                <button className="mt-6 px-8 py-3 bg-orange-500 text-white font-black uppercase tracking-widest text-xs hover:bg-orange-600 transition-colors duration-300">
+                <button className="mt-8 px-10 py-4 bg-orange-500 text-white 
+                                   font-black uppercase tracking-widest text-xs 
+                                   hover:bg-orange-600 transition-colors duration-300">
                   Read Full Bio
                 </button>
               </Link>
@@ -125,45 +146,51 @@ const Team = () => {
           </div>
         </section>
 
-        {/* SECTION 2.1: THE LEADERSHIP (Strategic partner Portrait) */}
-        <section className="min-h-screen bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* content developer Image: Cinematic & Large */}
+
+        {/* ===== MEMBER BLOCK 4 ===== */}
+        <section>
+          <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 
+                          grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
             <motion.div
-              className="lg:col-span-4 order-2 lg:order-1"
+              className="lg:col-span-5 lg:order-2"
               initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
               whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
-              transition={{ duration: 0.2, ease: "expo.out" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
             >
-              <div className="relative group">
+              <div className="relative overflow-hidden">
                 <img
-                  src="/images/sculptor.png" // 
-                  className="w-full h-full object-bottom object-cover contrast-125"
-                  alt="CEO Image Nigeria Event"
+                  src="/images/sculptor.png"
+                  className="w-full h-[500px] lg:h-[600px] object-cover object-bottom"
+                  alt="Adenle John Oyewole"
                 />
                 <div className="absolute inset-0 bg-orange-500/10 mix-blend-multiply" />
               </div>
             </motion.div>
 
-            {/* CEO Text */}
-            <div className="lg:col-span-10 order-2 lg:order-2 text-black">
-              <h2 className="text-2xl md:text-5xl font-black  tracking-tighter leading-none mb-8">
+            <div className="lg:col-span-7 lg:order-1 text-black">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-6">
                 Adenle John Oyewole
               </h2>
-              <p className="text-xl text-gray-600 font-medium leading-relaxed max-w-md border-l-4 border-orange-500 pl-6">
+
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 
+                            font-medium border-l-4 border-orange-500 pl-6 max-w-xl">
                 Sculpture, Art Education, Fellow of Art in Medicine
               </p>
 
               <Link to="/sculptor">
-                <button className="mt-6 px-8 py-3 bg-orange-500 text-white font-black uppercase tracking-widest text-xs hover:bg-orange-600 transition-colors duration-300">
+                <button className="mt-8 px-10 py-4 bg-orange-500 text-white 
+                                   font-black uppercase tracking-widest text-xs 
+                                   hover:bg-orange-600 transition-colors duration-300">
                   Read Full Bio
                 </button>
               </Link>
             </div>
           </div>
         </section>
+
       </div>
-    </>
+    </div>
   );
 };
 
