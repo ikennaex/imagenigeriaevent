@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Facebook, Instagram, TwitterIcon, X } from "lucide-react";
+import { BsTiktok } from "react-icons/bs";
 
 const NTIAC = () => {
   const fadeInUp = {
@@ -47,7 +49,7 @@ const NTIAC = () => {
 
             <motion.div variants={fadeInUp} className="pt-6">
               <a
-              target="_blank"
+                target="_blank"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfXsyUahW8ogz38D_gz9uLniR6eAUKJFgLSWM1l9DVuLXPheQ/viewform?fbzx=9078314837635883477"
                 className="inline-block bg-white text-orange-600 px-10 py-4 text-xs uppercase tracking-[0.25em] font-medium rounded-full hover:scale-105 hover:shadow-xl transition-all duration-500"
               >
@@ -162,7 +164,61 @@ const NTIAC = () => {
               </div>
             ))}
           </div>
+        {/* Social Links */}
+<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mt-10">
+
+  {/* Text */}
+  <p className="text-sm md:text-base font-semibold uppercase tracking-widest text-gray-700">
+    Follow NTIAC on Our Socials
+  </p>
+
+  {/* Icons */}
+  <div className="flex items-center gap-4">
+    
+    <a
+      href="https://facebook.com/ntiacexpo"
+      className="w-10 h-10 flex items-center justify-center 
+                 rounded-full border border-gray-300 
+                 hover:bg-orange-500 hover:border-orange-500 
+                 hover:text-white transition-all duration-300"
+    >
+      <Facebook size={18} />
+    </a>
+
+    <a
+      href="https://www.instagram.com/ntiacexpo"
+      className="w-10 h-10 flex items-center justify-center 
+                 rounded-full border border-gray-300 
+                 hover:bg-orange-500 hover:border-orange-500 
+                 hover:text-white transition-all duration-300"
+    >
+      <Instagram size={18} />
+    </a>
+
+    <a
+      href="https://x.com/ntiacexpo"
+      className="w-10 h-10 flex items-center justify-center 
+                 rounded-full border border-gray-300 
+                 hover:bg-orange-500 hover:border-orange-500 
+                 hover:text-white transition-all duration-300"
+    >
+      <TwitterIcon size={18} />
+    </a>
+
+    <a
+      href="https://www.tiktok.com/@ntiacexpo2026"
+      className="w-10 h-10 flex items-center justify-center 
+                 rounded-full border border-gray-300 
+                 hover:bg-orange-500 hover:border-orange-500 
+                 hover:text-white transition-all duration-300"
+    >
+      <BsTiktok size={18} />
+    </a>
+
+  </div>
+</div>
         </div>
+
       </section>
     </main>
   );

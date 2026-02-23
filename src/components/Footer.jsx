@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 
+
 const Footer = () => {
   return (
     <footer className="relative bg-customGreen text-white overflow-hidden">
@@ -39,6 +40,7 @@ const Footer = () => {
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },
                 { name: "Our Work", path: "/ourwork" },
+                { name: "NTIAC", path: "/ntiac" },
                 { name: "Contact", path: "/contact" },
               ].map((item, index) => (
                 <li key={index}>
@@ -107,19 +109,6 @@ const Footer = () => {
             reserved.
           </p>
 
-          {/* Social Links */}
-          <div className="flex gap-6 mt-6 md:mt-0">
-            {["Instagram", "Twitter", "LinkedIn"].map((social, index) => (
-              <a
-                key={index}
-                href="#"
-                className="relative group text-white/60 hover:text-orange-500 transition-colors duration-300"
-              >
-                {social}
-                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-orange-500 transition-all duration-300 group-hover:w-full" />
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>
