@@ -36,7 +36,7 @@ const Herosection = () => {
             initial={{ clipPath: "inset(0 100% 0 0)" }}
             animate={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1, ease: "circOut" }}
-            className="text-5xl md:text-7xl xl:text-8xl font-extrabold tracking-tight mb-6 leading-[1.05]"
+            className="text-5xl uppercase md:text-7xl xl:text-8xl font-extrabold tracking-tight mb-6 leading-[1.05]"
           >
             Image Nigeria Event
           </motion.h1>
