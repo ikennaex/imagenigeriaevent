@@ -13,9 +13,9 @@ const Homepage = () => {
     <div>
       <Herosection />
       <About />
+      <UpcomingEvent />
       <Team />
       <OurWork />
-      <UpcomingEvent />
     </div>
   )
 }
