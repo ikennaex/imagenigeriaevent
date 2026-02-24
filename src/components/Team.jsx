@@ -132,7 +132,7 @@ const Team = () => {
 
               <p className="text-lg md:text-xl lg:text-2xl text-gray-600 
                             font-medium border-l-4 border-orange-500 pl-6 max-w-xl">
-                Marketing / Media Content Developer
+                Marketing Consultant
               </p>
 
               <Link to="/contentdev">

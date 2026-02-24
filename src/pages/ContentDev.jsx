@@ -25,7 +25,7 @@ const ContentDev = () => {
               Babafunsho Adekunle
             </h2>
             <p className="text-xl text-gray-600 italic mt-3">
-              Marketing / Media Content Developer
+              Marketing Consultant
             </p>
           </div>
 
