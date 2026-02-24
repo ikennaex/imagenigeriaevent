@@ -84,7 +84,7 @@ const Herosection = () => {
         >
           <div className="absolute translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10 rounded-lg" />
           <img
-            src="images/heroimg.jpg"
+            src="images/nigeriabanner.png"
             alt="Vibrant Event Nigeria"
             className="w-full h-[300px] md:h-[450px] object-cover border-4 border-white rounded-lg shadow-lg"
           />
