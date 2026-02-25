@@ -59,9 +59,17 @@ const Herosection = () => {
             </Link> */}
 
             <p>
-              Celebrating Creativity, Elevating Nigeria – IMAGE NIGERIA EVENT
-              crafts unforgettable experiences and high-profile awards to
-              showcase Nigeria on the global stage.
+              NIGERIA is a complex, high- potential national BRAND ranked as
+              Africa's strongest, Characterised by a paradox of global
+              admiration for its creative, innovative tech industries and
+              massive economic potentials So as a BRAND of international repute
+              Nigeria is not only Africa's cultural and creative power house ,
+              it is the GIANT OF AFRICA and the continent's most talented and
+              promising populous Nation These spectacular, impressive and
+              enviable attributes is a driving force for the IMAGE NIGERIA EVENT
+              team as an organization to propagate the Nigerian vision, mission
+              statement and Reputation through historic patriotic event ideas,
+              engagements and Activities to sell the brand NIGERIA
             </p>
 
             {/* <img src="images/logo.jpeg" alt="" /> */}
