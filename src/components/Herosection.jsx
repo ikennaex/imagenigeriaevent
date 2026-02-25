@@ -59,7 +59,7 @@ const Herosection = () => {
             </Link> */}
 
             <p>
-              NIGERIA is a complex, high- potential national BRAND ranked as
+              NIGERIA is a complex, high- potential International BRAND ranked as
               Africa's strongest, Characterised by a paradox of global
               admiration for its creative, innovative tech industries and
               massive economic potentials So as a BRAND of international repute
