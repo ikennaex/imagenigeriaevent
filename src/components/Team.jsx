@@ -189,6 +189,48 @@ const Team = () => {
           </div>
         </section>
 
+        {/* ===== MEMBER BLOCK 5 ===== */}
+        <section>
+          <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 
+                          grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+            <motion.div
+              className="lg:col-span-5 lg:order-2"
+              initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
+              whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src="/images/web-manager.jpeg"
+                  className="w-full h-[500px] lg:h-[600px] object-cover object-bottom"
+                  alt="Ini Williams Brown"
+                />
+                <div className="absolute inset-0 bg-orange-500/10 mix-blend-multiply" />
+              </div>
+            </motion.div>
+
+            <div className="lg:col-span-7 lg:order-1 text-black">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-6">
+                Ini Williams Brown
+              </h2>
+
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 
+                            font-medium border-l-4 border-orange-500 pl-6 max-w-xl">
+                Social Media Strategist and Website Manager
+              </p>
+
+              <Link to="/webmanager">
+                <button className="mt-8 px-10 py-4 bg-orange-500 text-white 
+                                   font-black uppercase tracking-widest text-xs 
+                                   hover:bg-orange-600 transition-colors duration-300">
+                  Read Full Bio
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
   );
